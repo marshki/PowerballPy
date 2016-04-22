@@ -10,13 +10,13 @@ Generate 1 'red ball' number between 1 and 26 (inclusive)
 import random 
 
 #Define functions 
-def powerball_1():
+def powerball_white_nums():
 	white = random.sample(range(1,69),5)
 	print 'Your \'white ball\' numbers are:'
 	print ', '.join(map(str, white))
 () 
 
-def powerball_2():
+def powerball_red_num():
 	red = random.sample(range(1,26),1)	
 	print 'Your \'red ball\' number is:' 
 	print ', '.join(map(str, red)) 
@@ -27,4 +27,4 @@ def powerball_2():
 runs=int(raw_input('Enter number of runs: '))
 
 for n in range(runs):
-	powerball_1(), powerball_2()
+	powerball_white_nums(), powerball_red_num()
