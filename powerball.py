@@ -1,6 +1,6 @@
 #!/bin/py 
 """
-Pseudo-random number generator
+Pseudo-random number generator for 'Powerball'
 Prompt user for number of runs. 
 Generate 5 'white ball' numbers between 1 and 69 (inclusive, no duplicates) 
 Generate 1 'red ball' number between 1 and 26 (inclusive) 
