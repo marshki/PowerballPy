@@ -1,6 +1,6 @@
 # Powerball number generator 
 
-Pseudo-random number generator for 'Powerball' written in Python 2.7 .
+Pseudo-random number generator for 'Powerball' written in Python 2.7.6 .
 
 ## Usage 
 
@@ -11,9 +11,9 @@ Program generates the following set:
 
 User designates the number of sets they'd like to create.
 
-##History 
+## History 
 
-First commit Apr. 21, 2015 @9:23 PM EDT. 
+First commit Apr. 21, 2016 @20:23 ET. 
 
 ## License 
 
