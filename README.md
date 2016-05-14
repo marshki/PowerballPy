@@ -4,6 +4,9 @@ Pseudo-random number generator for 'Powerball' written in Python 2.7.6 .
 
 ## Usage 
 
+Program can be run directly from a shell with: 
+`python powerball.py`
+
 Program generates the following set:
 
 * 5 pseudo-random numbers between 1 and 69, inclusive, and with no duplicates 
