@@ -14,12 +14,14 @@ def powerball_white_nums():
 	white = random.sample(range(1,69),5)
 	print 'Your \'white ball\' numbers are:'
 	print ', '.join(map(str, white))
+	print 
 () 
 
 def powerball_red_num():
 	red = random.sample(range(1,26),1)	
 	print 'Your \'red ball\' number is:' 
 	print ', '.join(map(str, red)) 
+	print 
 ()
 
 #Prompt user for number of runs 
