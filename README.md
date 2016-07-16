@@ -14,6 +14,11 @@ Program generates the following set:
 
 User designates the number of sets they'd like to create.
 
+## To do: 
+
+Add Gtk 3 gui for this function. 
+Add Python3 implementation of the same. 
+
 ## History 
 
 First commit Apr. 21, 2016 @20:23 ET. 
