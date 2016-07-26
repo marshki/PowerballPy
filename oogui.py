@@ -1,31 +1,28 @@
 #!/bin/py
-import tkinter 
 
-class Counter:
-	def _init_(self, parent): 
-		self.parent = parent 
-		self.frame = tkinter.Frame(parent)
-		self.frame.pack()
+from tkinter import *
 
-		self.state = tkinter.IntVar()
-		self.state.set(1)
+class Application(Frame):
 
-		self.label = tkinter.Label(self.frame, textvariable=self.state)
-		self.label.pack()
+    def __init__(self, master):
+        super(Application, self).__init__(master)
+        self.grid()
+        self.bttn_clicks = 0
+        self.create_widget()
 
-		self.up = tkinter.Button(self.frame, text='up', command=self.up_click)
-		self.up.pack(side = 'left')
+    def create_widget(self):
+        self.bttn = Button(self)
+        self.bttn['text'] = "Total Clicks: 0"
+        self.bttn['command'] = self.update_count
+        self.bttn.grid()
 
-		self.right = tkinter.Button(self.frame, text='quit', command=self.quit_click)
-		self.right.pack(side='left')
+    def update_count(self):
+        self.bttn_clicks += 1
+        self.bttn['text'] = "Total Clicks: " + str(self.bttn_clicks)
 
-	def up_click(self): 
-		self.state.set(self.state.get() +1)
+root = Tk()
+root.title("Powerball Number Generator")
 
-	def quit_click(self):
-		self.parent.destroy()
+app = Application(root)
 
-if __name__ == '__main__':
-	window = tkinter.Tk()
-	myapp = Counter(window)
-	window.mainloop()	
+root.mainloop() 	
