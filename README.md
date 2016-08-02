@@ -14,10 +14,10 @@ Program generates the following set:
 
 User designates the number of sets they'd like to create.
 
-## To do: 
+## Todo: 
 
-Add Gtk 3 gui for this function. 
-Add Python3 implementation of the same. 
+- [ ] Add Tkinter gui for this function. 
+- [ ] Run in Python 3 as well. 
 
 ## History 
 
