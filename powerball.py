@@ -1,32 +1,39 @@
 #!/bin/py 
-"""
-Pseudo-random number generator for 'Powerball'
-Prompt user for number of runs 
-Generate 5 'white ball' numbers between 1 and 69 (inclusive, no duplicates) 
-Generate 1 'red ball' number between 1 and 26 (inclusive) 
-"""
+# Python 2 or 3 
 
-#Import 'random' Python library 
+"""Pseudo-random number generator for 'Powerball' lottery"""
+ 
+# Import 'random' Python library
+ 
 import random 
 
-#Define functions 
-def powerball_white_nums():
-	white = random.sample(range(1,69),5)
-	print 'Your \'white ball\' numbers are:'
-	print ', '.join(map(str, white))
-	print 
-() 
+# Define functions 
 
-def powerball_red_num():
+def white_nums():
+	"""Generate 5 'white ball' numbers between 1 and 69--inclusive, no duplicates"""
+	whites = random.sample(range(1,69),5)
+	return(', '.join(map(str, whites)))	# strip non-integer characters, separate numbers with commas 
+
+
+def red_num():
+	"""Generate 1 'red ball' number between 1 and 26--inclusive""" 
 	red = random.sample(range(1,26),1)	
-	print 'Your \'red ball\' number is:' 
-	print ', '.join(map(str, red)) 
-	print 
-()
+	return(', '.join(map(str, red)))	# strip non-integer characters, separate numbers with commas 
 
-#Prompt user for number of runs 
-#Run program 
-runs=int(raw_input('Enter number of runs: '))
 
-for n in range(runs):
-	powerball_white_nums(), powerball_red_num()
+def user_runs(): 
+	"""Prompt user for number of runs"""
+	return int(input('Enter number of runs:  '))
+
+
+def program():
+	runs = user_runs()
+	for int in range(runs):
+		white = white_nums() 
+		red = red_num()
+		print("Whiteball numbers are: %s" % (white)) 
+		print("Redball number is: %s" % (red))
+		print('')		
+
+print("\nWelcome to the Powerball Number Generator!\n")
+program()
