@@ -1,27 +1,28 @@
 # Powerball number generator 
 
-Pseudo-random number generator for 'Powerball' written in Python 2.7.6 .
+Pseudo-random number generator for 'Powerball' in Python 2 & 3.
 
 ## Usage 
 
 Program can be run directly from a shell with: 
-`python powerball.py`
+`python powerball.py` or `python3 powerball.py`
 
 Program generates the following set:
 
-* 5 pseudo-random numbers between 1 and 69, inclusive, and with no duplicates 
-* 1 pseudo-random number between 1 and 26, inclsuive.
+* 5 pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
+* 1 pseudo-random number between 1 and 26, inclsuive. 
 
 User designates the number of sets they'd like to create.
 
 ## Todo: 
 
-- [ ] Add Tkinter gui for this function. 
-- [ ] Run in Python 3 as well. 
+- [ ] Add Tkinter gui for this program. 
+
 
 ## History 
 
 First commit Apr. 21, 2016 @20:23 ET. 
+Unified programs for Python 2 & 3 08.04.2016. 
 
 ## License 
 
