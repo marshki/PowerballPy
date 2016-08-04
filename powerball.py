@@ -27,6 +27,7 @@ def user_runs():
 
 
 def program():
+	"""Guts of the program"""
 	runs = user_runs()
 	for int in range(runs):
 		white = white_nums() 
