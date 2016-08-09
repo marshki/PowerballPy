@@ -15,7 +15,7 @@ Program generates the following set:
 User designates the number of sets they'd like to create.
 
 ## Todo: 
-
+- [ ] Format output to a nice table. 
 - [ ] Add Tkinter gui for this program. 
 
 
