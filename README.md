@@ -27,4 +27,4 @@ Unified programs for Python 2 & 3 Aug. 4, 2016.
 
 ## License 
 
-MIT License. 'Nuff said.  
+[MIT License](https://opensource.org/licenses/MIT). 'Nuff said.  
