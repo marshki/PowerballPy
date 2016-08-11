@@ -5,7 +5,7 @@ Pseudo-random number generator for 'Powerball' in Python 2 & 3.
 ## Usage 
 
 Program can be run directly from a shell with: 
-`python powerball.py` or `python3 powerball.py`
+`python powerball_2.0.py` or `python3 powerball_2.0.py`
 
 Program generates the following set:
 
