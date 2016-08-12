@@ -20,12 +20,12 @@ def user_runs():
 
 def white_nums():
 	"""Generate 5 'white ball' numbers between 1 and 69--inclusive, no duplicates"""
-	whites = random.sample(range(1,69),5)
+	whites = random.sample(range(1, 69 + 1),5)	# Python range stops at y - 1 in range(x, y)
 	return(', '.join(map(str, whites)))		# strip non-integer characters, separate numbers with commas 
 
 def red_num():
 	"""Generate 1 'red ball' number between 1 and 26--inclusive""" 
-	red = random.sample(range(1,26),1)	
+	red = random.sample(range(1, 26 + 1),1)		# Python range stops at y - 1 in range(x, y)
 	return(', '.join(map(str, red)))		# strip non-integer characters, separate numbers with commas 
 	
 def program():
