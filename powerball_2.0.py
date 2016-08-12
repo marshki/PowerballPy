@@ -4,13 +4,13 @@
 """Pseudo-random number generator for 'Powerball' lottery"""
  
 # Import Python modules 
- 
 import random					# for number generation  
 from prettytable import PrettyTable 		# for tabular formatting 
 
-# Create table for displaying numbers with headers   
- 
+# Create table for displaying numbers with headers; align ouput to left 
+
 table = PrettyTable(['White #s', 'Red #'])	
+table.align = "l"
 
 # Define functions 
 
