@@ -4,7 +4,7 @@
 """Pseudo-random number generator for 'Powerball' lottery"""
  
 # Import Python modules 
-import random					# for number generation  
+import random					            # for number generation  
 from prettytable import PrettyTable 		# for tabular formatting 
 
 # Create table for displaying numbers with headers; align ouput to left 
@@ -38,7 +38,7 @@ def program():
 	return table 
 
 # Let's play! 		
-
-print("\nWelcome to the Powerball Number Generator!\n")
-pretty_table = program()
-print(pretty_table) 
+if __name__ == '__main__': 
+    print("\nWelcome to the Powerball Number Generator!\n")
+    pretty_table = program()
+    print(pretty_table) 
