@@ -17,7 +17,9 @@ to a `PrettyTable`
 User designates the number of sets they'd like to create.
 
 ## Todo: 
-- [x] Format output to a nice table. 
+- [x] Format output to a nice table.
+- [ ] Add unit tests.
+- [ ] Integrate with travis-ci & landscape.io 
 
 ## History 
 
