@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/py
 # Python 2 or 3 
 
 """Pseudo-random number generator for 'Powerball' lottery"""
