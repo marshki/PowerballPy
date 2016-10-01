@@ -42,9 +42,4 @@ if __name__ == '__main__':
 
 
 unittest.main()
-=======
-#!/usr/bin Python
 
-# import Python module 
-import unittest 
->>>>>>> 846964a2ab235b38418037d02720ad9a146c7619
