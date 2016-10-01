@@ -4,7 +4,7 @@
 """Pseudo-random number generator for 'Powerball' lottery"""
  
 # Import Python modules 
-import random					            # for number generation  
+import random					# for number generation  
 from prettytable import PrettyTable 		# for tabular formatting 
 
 # Create table for displaying numbers with headers; align ouput to left 

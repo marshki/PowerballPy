@@ -18,6 +18,7 @@ User designates the number of sets they'd like to create.
 
 ## Todo: 
 - [x] Format output to a nice table.
+- [ ] Refactor: separation of concerns. 
 - [ ] Add unit tests.
 - [ ] Integrate with travis-ci & landscape.io 
 
