@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/env Python3 
 """ 
 Unit tests.
@@ -9,9 +8,8 @@ Unit tests.
 import unittest 
 from powerball_2 import * 
 
-# define testing class 
+# Define testing class 
 
-import unittest
 import random
 
 def white_nums(range_min, range_max, balls):
