@@ -21,13 +21,13 @@ table.align = "l"
 def userInput():
     """ Prompt user for Y/N input """ 
     while True: 
-        userChoice = str(input('Generate Powerball numbers? Y/N: ')).lower()
+        userChoice = str(input('\nGenerate Powerball numbers? Y/N: ')).lower()
         if userChoice == 'y' or userChoice == 'n': 
             return userChoice  
 
 def userRuns(): 
     """ Prompt user for number of runs """
-    return int(input('Enter number of runs: '))
+    return int(input('\nEnter number of runs: '))
 
 def whiteNums(): 
     """ Generate 5 'white ball' numbers between 1 and 69--inclusive, no duplicates"""
@@ -54,15 +54,16 @@ def powerball():
         runMe = userInput() 
         if runMe == 'y': 
             generate = generateNums()
+            print('\n')
             print(generate)
             continue 
         else: 
-            print('Ciao!')
+            print('\nCiao!')
             break 
             
 # Let's play!
 
 if __name__ == '__main__': 
-    print("\nWelcome to the Powerball Number Generator!\n")
+    print("\nWelcome to the Powerball Number Generator!")
     prettyTable = powerball()
 
