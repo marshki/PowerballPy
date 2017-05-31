@@ -18,6 +18,10 @@ table.align = "l"
 
 # Define functions 
 
+'''
+Add a better try/excpet block here in line with userRuns() 
+'''
+
 def userInput():
     """ Prompt user for Y/N input """ 
     while True: 
