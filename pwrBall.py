@@ -25,9 +25,12 @@ Add a better try/excpet block here in line with userRuns()
 def userInput():
     """ Prompt user for Y/N input """ 
     while True: 
-        userChoice = str(input('Generate Powerball numbers? Y/N: ')).lower()
-        if userChoice == 'y' or userChoice == 'n': 
-            return userChoice  
+        try: 
+            userChoice = str(input('Generate Powerball numbers? Y/N: ')).lower()
+            if userChoice == 'y' or userChoice == 'n': 
+                return userChoice 
+        except ValueError: 
+            print('Try again')  
 
 def userRuns(): 
     """ Prompt user for number of runs """
