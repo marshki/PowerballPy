@@ -23,7 +23,7 @@ def userInput():
     while True: 
         try: 
             userChoice = str(input('Generate Powerball numbers? Y/N: ')).lower()
-            if userChoice == 'y' or userChoice == 'n': 
+            if userChoice in ['y','n']: 
                 return userChoice 
         except ValueError: 
             print('Try again')  
