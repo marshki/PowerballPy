@@ -18,10 +18,6 @@ table.align = "l"
 
 # Define functions 
 
-'''
-Add a better try/excpet block here in line with userRuns() 
-'''
-
 def userInput():
     """ Prompt user for Y/N input """ 
     while True: 
@@ -74,6 +70,6 @@ def powerball():
 # Let's play!
 
 if __name__ == '__main__': 
-    print("\nWelcome to the Powerball Number Generator!")
+    print("Welcome to the Powerball Number Generator!")
     prettyTable = powerball()
 
