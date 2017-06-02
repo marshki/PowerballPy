@@ -32,7 +32,7 @@ def userRuns():
     """ Prompt user for number of runs """
     while True:
         try: 
-            return int(input('Enter number of runs: '))
+            return int(input('Enter number of runs: ')) 
         except ValueError: 
                 print('Try again')
 
@@ -48,7 +48,9 @@ def redNum():
 
 def generateNums(): 
     """ Create table with Powerball numbers  """ 
-    runs = userRuns()                           # Something is rotten in Denmark: code (mistakenly) adds runs cummulatively !!!
+    
+    runs = userRuns()                          
+ 
     for int in range(runs): 
         white = whiteNums()
         red = redNum()
@@ -66,6 +68,9 @@ def powerball():
         else: 
             print('Ciao!')
             break 
+''' 
+The table is being appended to each time one runs the generator. This isn't what is expected. Need to fix!!!
+''' 
             
 # Let's play!
 
