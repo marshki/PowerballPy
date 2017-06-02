@@ -48,7 +48,7 @@ def redNum():
 
 def generateNums(): 
     """ Create table with Powerball numbers  """ 
-    runs = userRuns()
+    runs = userRuns()                           # Something is rotten in Denmark: code (mistakenly) adds runs cummulatively !!!
     for int in range(runs): 
         white = whiteNums()
         red = redNum()
