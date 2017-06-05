@@ -11,16 +11,10 @@ from builtins import input
 import random                                   # for number generation 
 from prettytable import PrettyTable             # for tabular formatting 
 
-'''
-# Create table for displaying number with headers; align output to left 
-
-table = PrettyTable(['White #s', 'Red #'])
-table.align = "l"
-''' 
-
 # Define functions 
 
 def makeTable(): 
+    """ Create table for displaying number with headers; aligh output to left """ 
     table = PrettyTable(['Whites #s', 'Red #'])
     table.align = 'l'
     return table 
@@ -77,10 +71,7 @@ def powerball():
         else: 
             print('Ciao!')
             break 
-''' 
-The table is being appended to each time one runs the generator. This isn't what is expected. Need to fix!!!
-''' 
-            
+           
 # Let's play!
 
 if __name__ == '__main__': 
