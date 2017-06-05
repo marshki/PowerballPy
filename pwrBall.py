@@ -11,12 +11,19 @@ from builtins import input
 import random                                   # for number generation 
 from prettytable import PrettyTable             # for tabular formatting 
 
+'''
 # Create table for displaying number with headers; align output to left 
 
 table = PrettyTable(['White #s', 'Red #'])
 table.align = "l"
+''' 
 
 # Define functions 
+
+def makeTable(): 
+    table = PrettyTable(['Whites #s', 'Red #'])
+    table.align = 'l'
+    return table 
 
 def userInput():
     """ Prompt user for Y/N input """ 
@@ -49,6 +56,8 @@ def redNum():
 def generateNums(): 
     """ Create table with Powerball numbers  """ 
     
+    table = makeTable()
+
     runs = userRuns()                          
  
     for int in range(runs): 
