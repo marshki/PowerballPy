@@ -11,6 +11,8 @@ from builtins import input
 import random                                   # for number generation 
 from prettytable import PrettyTable             # for tabular formatting 
 
+import argparse 
+
 # Define functions 
 
 def makeTable(): 
