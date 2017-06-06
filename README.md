@@ -4,6 +4,8 @@ Pseudo-random number generator for 'Powerball' in Python 2 & 3.
 
 ## Usage 
 
+~~Update: `pwrball.py` is the latest iteration of this script.~~
+
 Program can be run directly from a shell with: 
 `python powerball_2.0.py` or `python3 powerball_2.0.py`
 
@@ -18,7 +20,8 @@ User designates the number of sets they'd like to create.
 
 ## Todo: 
 - [x] Format output to a nice table.
-- [ ] Refactor: separation of concerns. 
+- [x] Refactor: separation of concerns. 
+- [ ] Argument parsing so you can run this directly w/out invoking script 
 - [ ] Add unit tests.
 - [ ] Integrate with travis-ci & landscape.io 
 
