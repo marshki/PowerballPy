@@ -9,8 +9,13 @@ from builtins import input
 
 # Import Python modules 
 from prettytable import PrettyTable             # for tabular formatting 
-import argparse                                 # for argument parsing  
 import random                                   # for number generation 
+
+import argparse                                 # for argument parsing  
+
+parser = argparse.ArgumentParser() 
+parser.parse_args()
+
 
 # Define functions 
 
