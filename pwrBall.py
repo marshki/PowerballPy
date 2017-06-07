@@ -8,10 +8,9 @@ from builtins import input
 """ Pseudo-random number generator for 'Powerball' lottery """
 
 # Import Python modules 
-import random                                   # for number generation 
 from prettytable import PrettyTable             # for tabular formatting 
-
-import argparse 
+import argparse                                 # for argument parsing  
+import random                                   # for number generation 
 
 # Define functions 
 
