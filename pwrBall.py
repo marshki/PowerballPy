@@ -5,6 +5,8 @@ from builtins import input
 #!/usr/bin/env Python3 
 # Python 2 or 3 
 
+# This is basically the final version. I did stuff backwards and need some advice on unit testing this. 
+
 """ Pseudo-random number generator for 'Powerball' lottery """
 
 # Import Python modules 
