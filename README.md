@@ -23,7 +23,7 @@ to a `PrettyTable`
 
 User designates the number of sets they'd like to create.
 
-## Todo: 
+## TODO: 
 
 - [x] Format output to a nice table.
 - [x] Refactor: separation of concerns. 
