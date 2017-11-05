@@ -1,12 +1,17 @@
 # Powerball number generator 
 
-Pseudo-random number generator for 'Powerball' in Python 2 & 3.
+Pseudo-random number generator for `Powerball Lottery` in Python 2 & 3.
+`powerball_3.0.py` is the latest version of this program. 
+
+## Requirements 
+
+`future 0.16.0`
+`PrettyTable 0.7.2`
 
 ## Usage 
 
-~~Update: `pwrball.py` is the latest iteration of this script.~~
-
-Program can be run directly from a shell with: 
+Run directly from a shell with:
+ 
 `python powerball_2.0.py` or `python3 powerball_2.0.py`
 
 Program generates the following set:
