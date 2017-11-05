@@ -6,7 +6,7 @@ Pseudo-random number generator for `Powerball Lottery` in Python 2 & 3.
 ## Requirements 
 
 [future 0.16.0](https://pypi.python.org/pypi/future) may be installed with: `pip install future` 
-PrettyTable 0.7.2(https://pypi.python.org/pypi/PrettyTable) may be installed with: `pip install https://pypi.python.org/pypi/PrettyTable`
+[PrettyTable 0.7.2](https://pypi.python.org/pypi/PrettyTable) may be installed with: `pip install https://pypi.python.org/pypi/PrettyTable`
 
 
 ## Usage 
