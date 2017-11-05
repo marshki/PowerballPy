@@ -1,5 +1,7 @@
 #!/bin/py 
 # Python 2 or 3 
+# Version 1.0 
+
 
 """Pseudo-random number generator for 'Powerball' lottery"""
  
