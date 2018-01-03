@@ -15,6 +15,14 @@ Install Python requirements:
 
 Usage
 -----
+Program generates the following set:
+
+* 5 pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
+* 1 pseudo-random number between 1 and 26, inclsuive.
+
+to a `PrettyTable`
+
+User designates the number of sets they'd like to create.
 
 TODO
 ----
