@@ -36,3 +36,12 @@ User designates the number of sets they'd like to create.
 
 TODO
 ----
+- [ ] Argument parsing 
+- [ ] Unit testing 
+- [ ] TravisCI 
+
+Change Log
+----------
+
+License
+-------
