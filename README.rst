@@ -22,7 +22,6 @@ Install Python requirements per your version of Python:
 Usage
 -----
 Run directly from a shell per your version of Python: 
-
 :: 
     python powerballPy.py   
     python3 powerballPy.py 
