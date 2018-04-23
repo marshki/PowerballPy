@@ -8,11 +8,6 @@ from builtins import input
 from prettytable import PrettyTable             # for tabular formatting 
 import random                                   # for number generation 
 
-import argparse                                 # for argument parsing  
-
-parser = argparse.ArgumentParser() 
-parser.parse_args()
-
 def makeTable(): 
     """ Create table for displaying number with headers; aligh output to left """ 
     table = PrettyTable(['Whites #s', 'Red #'])
