@@ -3,9 +3,7 @@
 from __future__ import print_function
 from builtins import input
 
-"""
-Pseudo-random number generator for 'Powerball' lottery.
-"""
+### Pseudo-random number generator for 'Powerball' lottery. ###
 
 from prettytable import PrettyTable             # for tabular formatting
 import random                                   # for number generation
