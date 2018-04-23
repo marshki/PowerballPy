@@ -5,7 +5,7 @@ PowerballPy
 Powerball Number Generator
 --------------------------
 
-Pseudo-random number generator for `Powerball Lottery`_ in Python 2 & 3.
+Pseudo-random number generator for Powerball_ lottery in Python 2 & 3.
 .. _Powerball Lottery: https://www.powerball.com/games/home 
 
 
@@ -19,7 +19,8 @@ Usage
 -----
 Run directly from a shell with: 
 
-.. python powerballPy.py:: bash   
+:: 
+    python powerballPy.py   
 
 Program generates the following set:
 
