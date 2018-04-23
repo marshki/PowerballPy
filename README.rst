@@ -46,3 +46,7 @@ Change Log
 
 License
 -------
+LICENSE_
+
+.. _LICENSE: https://github.com/marshki/PowerballPy/blob/master/LICENSE 
+
