@@ -1,66 +1,68 @@
+#!/usr/bin/env python
+
 from __future__ import print_function
 from builtins import input
 
-#!/usr/bin/env python
-
-""" Pseudo-random number generator for 'Powerball' lottery """
+"""
+Pseudo-random number generator for 'Powerball' lottery.
+"""
 
 from prettytable import PrettyTable             # for tabular formatting
 import random                                   # for number generation
 
-def makeTable():
-    """ Create table for displaying number with headers; aligh output to left """
+def make_table():
+    """ Create table for displaying numbers with headers. Align left. """
     table = PrettyTable(['Whites #s', 'Red #'])
     table.align = 'l'
     return table
 
-def userInput():
-    """ Prompt user for Y/N input """
+def yes_no_input():
+    """ Prompt user for Y/N input. """
     while True:
         try:
-            userChoice = str(input('Generate Powerball numbers? Y/N: ')).lower()
-            if userChoice in ['y','n']:
-                return userChoice
+            user_input = str(input('Generate Powerball numbers? Y/N: ')).lower()
+            if user_input in ['y','n']:
+                return user_input
         except ValueError:
             print('Try again')
 
-def userRuns():
-    """ Prompt user for number of runs """
+def numerical_input():
+    """ Prompt user for numerical input. """
     while True:
         try:
-            return int(input('Enter number of runs: '))
+            return int(input('How many sets of Powerball numbers should we generate?: '))
         except ValueError:
                 print('Try again')
 
-def whiteNums():
-    """ Generate 5 'white ball' numbers between 1 and 69--inclusive, no duplicates"""
+def white_numbers():
+    """ Generate 5 'white ball' numbers between 1 and 69--inclusive--no duplicates. """
     whites = random.sample(range(1, 69 + 1),5)  # Python range stops at y - 1 in range(x, y)
     return(', '.join(map(str, whites)))         # strip non-integer characters, separate numbers with commas
 
-def redNum():
-    """ Generate 1 'red ball' number between 1 and 26--inclusive """
-    red = random.sample(range(1, 26 + 1),1)     # Python range stops at y - 1 in range (x, y)
-    return(', '.join(map(str, red)))            # as above
+def red_number():
+    """ Generate 1 'red ball' number between 1 and 26--inclusive. """
+    red = random.sample(range(1, 26 + 1),1)     # As
+    return(', '.join(map(str, red)))            # above
 
-def generateNums():
-    """ Create table with Powerball numbers  """
+def generate_powerball_table():
+    """ Create table with Powerball numbers.  """
 
-    table = makeTable()
+    table = make_table()
 
-    runs = userRuns()
+    sets = numerical_input()
 
-    for int in range(runs):
-        white = whiteNums()
-        red = redNum()
+    for int in range(sets):
+        white = white_numbers()
+        red = red_number()
         table.add_row([white, red])
     return table
 
 def powerball():
     """ Guts of the program  """
     while True:
-        runMe = userInput()
-        if runMe == 'y':
-            generate = generateNums()
+        play = yes_no_input()
+        if play == 'y':
+            generate = generate_powerball_table()
             print(generate)
             continue
         else:
