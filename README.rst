@@ -43,6 +43,9 @@ TODO
 
 Change Log
 ----------
+CHANGELOG_
+
+.. _CHANGELOG: https://github.com/marshki/PowerballPy/blob/master/CHANGELOG.rst
 
 License
 -------
