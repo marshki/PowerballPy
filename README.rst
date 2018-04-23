@@ -14,17 +14,19 @@ Pseudo-random number generator for Powerball_ lottery in Python 2 & 3:
 
 Requirements
 ------------
-Install Python requirements:
+Install Python requirements per your version of Python:
 ::
     pip install -r requirements.txt
+    pip3 install -r requirements.txt 
 
 Usage
 -----
-Run directly from a shell with: 
+Run directly from a shell per your version of Python: 
 
 :: 
     python powerballPy.py   
-
+    python3 powerballPy.py 
+    
 Program generates the following set:
 
 * 5 pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
