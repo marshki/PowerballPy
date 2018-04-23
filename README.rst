@@ -5,7 +5,9 @@ PowerballPy
 Powerball Number Generator
 --------------------------
 
-Pseudo-random number generator for Powerball Lottery in Python 2 & 3.
+Pseudo-random number generator for `Powerball Lottery`_ in Python 2 & 3.
+.. _Powerball Lottery: https://www.powerball.com/games/home 
+
 
 Requirements
 ------------
@@ -15,6 +17,10 @@ Install Python requirements:
 
 Usage
 -----
+Run directly from a shell with: 
+
+.. python powerballPy.py:: bash   
+
 Program generates the following set:
 
 * 5 pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
