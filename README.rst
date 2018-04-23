@@ -7,7 +7,7 @@ Powerball Number Generator
 
 Pseudo-random number generator for Powerball_ lottery in Python 2 & 3.
 
-.. _Powerball Lottery: https://www.powerball.com/games/home 
+.. _Powerball: https://www.powerball.com/games/home 
 
 
 Requirements
