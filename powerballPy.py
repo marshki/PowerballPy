@@ -51,7 +51,7 @@ def generate_powerball_table():
 
     sets = numerical_input()
 
-    for int in range(sets):
+    for set in range(sets):
         white = white_numbers()
         red = red_number()
         table.add_row([white, red])
