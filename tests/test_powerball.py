@@ -3,6 +3,9 @@
 """Unit tests for powerball.py
 """
 
-import random
-import unittest
+from __future__ import print_function
+from builtins import input
 
+import unittest
+import random
+from prettytable import PrettyTable
