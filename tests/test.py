@@ -3,14 +3,11 @@
 Unit tests.
 """
 
-# Import functions
-
+import random
 import unittest
-from powerballPy import *
+from powerball import *
 
 # Define testing class
-
-import random
 
 def white_numbers(range_min, range_max, balls):
     return set(random.sample(range(range_min, range_max + 1), balls))
@@ -33,7 +30,7 @@ class TestWhiteNumbers(unittest.TestCase):
             self.assertLessEqual(white_ball, self.range_max)
 
     def test_duplicates(self):
-       self.assertEqual(self.white_balls, set(self.white_balls))
+        self.assertEqual(self.white_balls, set(self.white_balls))
 
 def red_number(range_min, range_max, balls):
     return set(random.sample(range(range_min, range_max + 1), balls))
