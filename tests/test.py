@@ -1,6 +1,6 @@
-#!/usr/bin/env Python3
-"""
-Unit tests.
+#!/usr/bin/env python
+
+"""Psuedo-random number generator for Powerball lottery. 
 """
 
 import random
