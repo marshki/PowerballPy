@@ -41,12 +41,12 @@ def numerical_input():
 
 def white_numbers():
     """Generate 5 'white ball' numbers between 1 and 69--inclusive--no duplicates.
-    Python range stops at y - 1 in range(x, y)
-    Strip non-integer characters, separate numbers with commas
+    Python range stops at y - 1 in range(x, y).
+    Strip non-integer characters, separate numbers with commas.
     """
 
     whites = random.sample(range(1, 69 + 1), 5)
-    return(', '.join(map(str, whites)))
+    return ', '.join(map(str, whites))
 
 def red_number():
     """Generate 1 'red ball' number between 1 and 26--inclusive.
@@ -54,7 +54,7 @@ def red_number():
     """
 
     red = random.sample(range(1, 26 + 1), 1)
-    return(', '.join(map(str, red)))
+    return ', '.join(map(str, red))
 
 def generate_powerball_table():
     """Create table with Powerball numbers.
@@ -64,7 +64,7 @@ def generate_powerball_table():
 
     sets = numerical_input()
 
-    for set in range(sets):
+    for _each in range(sets):
         white = white_numbers()
         red = red_number()
         table.add_row([white, red])
