@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 
-"""Psuedo-random number generator for Powerball lottery. 
+"""Psuedo-random number generator for Powerball lottery.
 """
 
 import random
 import unittest
-from powerball import *
-
-# Define testing class
 
 def white_numbers(range_min, range_max, balls):
+    """Generate n psuedo-random numbers between min and max range +1. 
+    """
     return set(random.sample(range(range_min, range_max + 1), balls))
 
-
 class TestWhiteNumbers(unittest.TestCase):
+    """Test class.
+    """
 
     def setUp(self):
         self.range_min = 1
@@ -36,6 +36,8 @@ def red_number(range_min, range_max, balls):
     return set(random.sample(range(range_min, range_max + 1), balls))
 
 class TestRedNumber(unittest.TestCase):
+    """Test class.
+    """
 
     def setUp(self):
         self.range_min = 1
