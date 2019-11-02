@@ -7,7 +7,7 @@ import random
 import unittest
 
 def white_numbers(range_min, range_max, balls):
-    """Generate n psuedo-random numbers between min and max range +1.
+    """Generate n pseudo-random numbers between min and max range +1.
     """
     return set(random.sample(range(range_min, range_max + 1), balls))
 
@@ -39,6 +39,8 @@ class TestWhiteNumbers(unittest.TestCase):
         self.assertEqual(self.white_balls, set(self.white_balls))
 
 def red_number(range_min, range_max, balls):
+    """Generate n pseudo-random number between min and max range +1.
+    """
     return set(random.sample(range(range_min, range_max + 1), balls))
 
 class TestRedNumber(unittest.TestCase):
@@ -52,15 +54,16 @@ class TestRedNumber(unittest.TestCase):
         self.red_ball = red_number(self.range_min, self.range_max, self.ball)
 
     def test_count(self):
+        """Test count of ball generated.
+        """
         self.assertEqual(len(self.red_ball), self.ball)
 
     def test_range(self):
+        """"Test red ball falls within min and max range.
+        """
         for red_ball in self.red_ball:
             self.assertGreaterEqual(red_ball, self.range_min)
             self.assertLessEqual(red_ball, self.range_max)
-
-    #def test_duplicates(self):
-    #   self.assertEqual(self.white_balls, set(self.white_balls))
 
 if __name__ == '__main__':
     unittest.main()
