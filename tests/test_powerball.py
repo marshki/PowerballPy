@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Unit tests for powerball.py
+"""Unit tests for powerball.py.
 """
 
 from __future__ import print_function
@@ -21,6 +21,7 @@ def yes_no_input():
                 return user_input
         except ValueError:
             print('Try again')
+            raise 
 
 class YesNoInput(unittest.TestCase):
 
@@ -33,7 +34,7 @@ class YesNoInput(unittest.TestCase):
     def test_yes_no_input_01(self, input):
         """Valid return value.
         """
-        self.assertEqual(yes_no_input(), user_input)
+        self.assertEqual(yes_no_input(), 'y')
 
 if __name__ == '__main__':
     unittest.main()
