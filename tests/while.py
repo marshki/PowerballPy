@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+"""Test.
+"""
+
 def yes_no_input():
     """Prompt user for Y/N input.
     """
