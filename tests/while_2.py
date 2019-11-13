@@ -2,7 +2,7 @@
 
 import unittest
 
-from unittest.mock import patch 
+from unittest.mock import patch
 from unittest import TestCase
 
 def yes_no_input():
