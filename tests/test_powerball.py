@@ -1,10 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+# pylint: disable=W0613,W0622
 
-"""Unit tests for powerball.py.
+"""Unit test for powerball.py.
 """
-
-from __future__ import print_function
-from builtins import input
 
 import unittest
 
@@ -16,12 +14,12 @@ def yes_no_input():
 
     while True:
         try:
-            user_input = str(input('Generate Powerball numbers? Y/N: ')).lower()
+            user_input = str(input('Generate Powerball numbers? Y/N:  ')).lower()
             if user_input in ['y', 'n']:
                 return user_input
         except ValueError:
             print('Try again')
-            raise 
+            raise
 
 class YesNoInput(unittest.TestCase):
 
@@ -35,6 +33,12 @@ class YesNoInput(unittest.TestCase):
         """Valid return value.
         """
         self.assertEqual(yes_no_input(), 'y')
+
+    @patch('builtins.input', return_value='n')
+    def test_yes_no_input_02(self, input):
+        """Valid return value.
+        """
+        self.assertEqual(yes_no_input(), 'n')
 
 if __name__ == '__main__':
     unittest.main()
