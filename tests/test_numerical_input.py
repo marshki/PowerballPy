@@ -16,6 +16,7 @@ def numerical_input():
             return int(input('How many sets of Powerball numbers should we generate?: '))
         except ValueError:
             print('Try again')
+            raise
 
 class NumericalInput(unittest.TestCase):
 
@@ -30,11 +31,12 @@ class NumericalInput(unittest.TestCase):
         """
         self.assertIsInstance(numerical_input(), int)
 
-    #@patch('builtins.input', return_value='n')
-    #def test_numerical_input_02(self, input):
-    #    """Valid return value.
-    #    """
-    #    self.assertEqual(numerical_input(), 'n')
+    @patch('builtins.input', return_value='n')
+    def test_numerical_input_02(self, input):
+        """Invalid return value.
+        """
+        with self.assertRaises(ValueError):
+            numerical_input()
 
 if __name__ == '__main__':
     unittest.main()
