@@ -5,7 +5,7 @@
 
 import unittest
 
-from unitest.mock import patch
+from unittest.mock import patch
 
 def numerical_input():
     """Prompt user for numerical input.
@@ -28,13 +28,13 @@ class NumericalInput(unittest.TestCase):
     def test_numerical_input_01(self, input):
         """Valid return value.
         """
-        self.assertEqual(numerical_input(), 'y')
+        self.assertIsInstance(numerical_input(), int)
 
-    @patch('builtins.input', return_value='n')
-    def test_numerical_input_02(self, input):
-        """Valid return value.
-        """
-        self.assertEqual(numerical_input(), 'n')
+    #@patch('builtins.input', return_value='n')
+    #def test_numerical_input_02(self, input):
+    #    """Valid return value.
+    #    """
+    #    self.assertEqual(numerical_input(), 'n')
 
 if __name__ == '__main__':
     unittest.main()
