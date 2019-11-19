@@ -31,7 +31,7 @@ class NumericalInput(unittest.TestCase):
         """
         self.assertIsInstance(numerical_input(), int)
 
-    @patch('builtins.input', return_value='n')
+    @patch('builtins.input', return_value='Derp!')
     def test_numerical_input_02(self, input):
         """Invalid return value.
         """
