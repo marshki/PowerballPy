@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # pylint: disable=W0613,W0622
 
-"""Unit test for powerball.py.
+"""Unit testing class for numerical input.
 """
 
 import unittest
