@@ -31,7 +31,7 @@ Program generates the following set:
 * 5 pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
 * 1 pseudo-random number between 1 and 26, inclsuive.
 
-to a PrettyTable_
+to a PrettyTable_ .
 
 .. _PrettyTable: https://pypi.org/project/PrettyTable
 
