@@ -2,6 +2,18 @@
 PowerballPy
 ===========
 
+.. image:: https://travis-ci.org/marshki/PowerballPy.svg?branch=master
+    :target: https://travis-ci.org/marshki/PowerballPy
+
+.. image:: https://api.codacy.com/project/badge/Grade/7f03d830dacb4b5cbf229739510fc1a2    
+   :target: https://www.codacy.com/manual/marshki/PowerballPy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/PowerballPy&amp;utm_campaign=Badge_Grade
+
+.. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+   :target: https://www.python.org/
+
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+   :target: https://lbesson.mit-license.org/
+
 Powerball Number Generator
 --------------------------
 
@@ -40,7 +52,6 @@ User designates the number of sets they'd like to create.
 TODO
 ----
 - [ ] Argument parsing 
-- [ ] TravisCI 
 
 Change Log
 ----------
