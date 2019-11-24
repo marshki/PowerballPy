@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """Pseudo-random number generator for 'Powerball' lottery.
 """

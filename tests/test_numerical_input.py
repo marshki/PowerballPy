@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # pylint: disable=W0613,W0622
 
 """Unit testing class for numerical input.
