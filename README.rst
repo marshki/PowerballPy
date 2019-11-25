@@ -49,10 +49,6 @@ to a PrettyTable_ .
 
 User designates the number of sets they'd like to create.
 
-TODO
-----
-- [ ] Argument parsing 
-
 Change Log
 ----------
 CHANGELOG_
