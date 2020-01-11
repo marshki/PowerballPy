@@ -43,8 +43,8 @@ Run directly from a shell per your version of Python:
     
 Program generates the following set:
 
-* 5 pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
-* 1 pseudo-random number between 1 and 26, inclsuive.
+* five (5) pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
+* one (1) pseudo-random number between 1 and 26, inclusive.
 
 to a PrettyTable_ .
 
@@ -63,4 +63,3 @@ License
 LICENSE_
 
 .. _LICENSE: https://github.com/marshki/PowerballPy/blob/master/LICENSE 
-
