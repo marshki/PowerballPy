@@ -14,6 +14,9 @@ PowerballPy
 .. image:: https://img.shields.io/badge/License-MIT-blue.svg
    :target: https://lbesson.mit-license.org/
 
+.. image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
+   :target: https://github.com/ellerbrock/open-source-badges/
+
 Powerball Number Generator
 --------------------------
 
