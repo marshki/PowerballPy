@@ -20,9 +20,21 @@ PowerballPy
 Powerball Number Generator
 --------------------------
 
-Pseudo-random number generator for Powerball_ lottery in Python 2 & 3: 
+Pseudo-random number generator for Powerball_ lottery in Python 2 & 3.
 
-.. image:: https://github.com/marshki/PowerballPy/blob/master/docs/powerballPY.png
++--------------------+-------+
+| White #s           | Red # | 
++====================+=======+
+| 12, 49, 22, 18, 20 | 18    | 
++--------------------+-------+
+| 27, 20, 25, 13, 3  | 14    | 
++--------------------+-------+
+| 20, 47, 64, 5, 26  | 11    | 
++--------------------+-------+
+| 10, 54, 40, 39, 6  | 20    | 
++--------------------+-------+
+| 30, 23, 63, 3, 25  | 8     | 
++--------------------+-------+
 
 .. _Powerball: https://www.powerball.com/games/home 
 
