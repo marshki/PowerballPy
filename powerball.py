@@ -10,7 +10,7 @@ import random
 from prettytable import PrettyTable
 
 def make_table():
-    """Create table for displaying numbers with headers. Align left.
+    """Use 'PrettyTable' module to create table for output. Align left.
     """
 
     table = PrettyTable(['Whites #s', 'Red #'])
@@ -19,6 +19,9 @@ def make_table():
 
 def yes_no_input():
     """Prompt user for Y/N input.
+    Args: User input.
+    Returns: 'y' or 'n'.
+    Raises: ValueError.
     """
 
     while True:
@@ -31,6 +34,9 @@ def yes_no_input():
 
 def numerical_input():
     """Prompt user for numerical input.
+    Args: User input.
+    Returns: Integer.
+    Raises: ValueError.
     """
 
     while True:
@@ -40,8 +46,7 @@ def numerical_input():
             print('Try again')
 
 def white_numbers():
-    """Generate 5 'white ball' numbers between 1 and 69--inclusive--no duplicates.
-    Python range stops at y - 1 in range(x, y).
+    """Generate five (5) 'white ball' numbers btwn. 1 and 69--inclusive--no duplicates.
     Strip non-integer characters, separate numbers with commas.
     """
 
@@ -49,15 +54,17 @@ def white_numbers():
     return ', '.join(map(str, whites))
 
 def red_number():
-    """Generate 1 'red ball' number between 1 and 26--inclusive.
-    As above.
+    """Generate one (1) 'red ball' number between 1 and 26--inclusive.
+    Strip non-integer characters.
     """
 
     red = random.sample(range(1, 26 + 1), 1)
     return ', '.join(map(str, red))
 
 def generate_powerball_table():
-    """Create table with Powerball numbers.
+    """Iterate through n number of sets,
+    generating 'white' & 'red' numbers,
+    appending to table, adding rows as needed.
     """
 
     table = make_table()
