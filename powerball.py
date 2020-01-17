@@ -62,23 +62,23 @@ def red_number():
     return ', '.join(map(str, red))
 
 def generate_powerball_table():
-    """Iterate through n number of sets,
-    generating 'white' & 'red' numbers,
-    appending to table, adding rows as needed.
+    """Iterate through _i number of sets;
+    generate 'white' & 'red' numbers;
+    append to table. Add rows as needed.
     """
 
     table = make_table()
 
     sets = numerical_input()
 
-    for _each in range(sets):
+    for _i in range(sets):
         white = white_numbers()
         red = red_number()
         table.add_row([white, red])
     return table
 
-def powerball():
-    """Guts of the program.
+def main():
+    """Main function.
     """
 
     while True:
@@ -93,4 +93,4 @@ def powerball():
 
 if __name__ == '__main__':
     print("Welcome to the Powerball Number Generator!")
-    powerball()
+    main()
