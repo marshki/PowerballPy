@@ -1,5 +1,5 @@
 ===========
-PowerballPy
+PowerballPy :8ball:
 ===========
 
 .. image:: https://travis-ci.org/marshki/PowerballPy.svg?branch=master
