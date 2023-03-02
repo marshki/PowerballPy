@@ -21,6 +21,10 @@ Powerball Number Generator
 --------------------------
 
 Pseudo-random number generator for Powerball_ lottery in Python 2 & 3.
+.. _Powerball: https://www.powerball.com/games/home 
+
+Sample Output
+-------------
 
 +--------------------+-------+
 | White #s           | Red # | 
@@ -35,9 +39,6 @@ Pseudo-random number generator for Powerball_ lottery in Python 2 & 3.
 +--------------------+-------+
 | 30, 23, 63, 3, 25  | 8     | 
 +--------------------+-------+
-
-.. _Powerball: https://www.powerball.com/games/home 
-
 
 Requirements
 ------------
