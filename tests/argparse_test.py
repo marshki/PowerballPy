@@ -1,19 +1,18 @@
 #!/usr/bin/env python 3
 
-"""Place-holder.
-"""
+"""Define set(s) of numbers to generate using argument parsing."""
+
 import argparse
 
 def parse_cli_args():
-    """Define command line parser w/arguments.
+    """Placeholder.
     """
-    parser = argparse.ArgumentParser(description="PowerballPy.")
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument("--", help="define n of sets to generate", nargs='+', type=float)
 
-    args = parser.parse_args()
+    parser = argparse.ArgumentParser(description="Set(s) of PowerBall numbers to generate.")
+    parser.add_argument("--sets", action="store", type=float,\
+                        required=False,\
+                        help="Number of sets to generate, e.g. 5")
 
-    if args.n_sets is None:
-        parser.error("Argument required. None given.")
-
-    return args
+    args = parser.parse.args()
+    print(args)
+    #return args
