@@ -31,7 +31,7 @@ class ParseCLIArgs(unittest.TestCase):
 
     def test_parser_cli_args_01(self):
         parsed = self.parser.parse_args(['--sets', '5'])
-        self.assertTrue(type(self.sets) is int)
+        self.assertTrue(type(self) is str)
 
 
     #def test_parser_cli_args_01(self):
