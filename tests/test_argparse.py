@@ -32,18 +32,12 @@ class ParseCLIArgs(unittest.TestCase):
     def test_parser_cli_args_01(self):
         """Valid return value."""
         parsed = self.parser.parse_args(['--sets', '5'])
-        self.assertTrue(parsed.sets, '5')
+        self.assertEqual(parsed.sets, 5)
 
-
-    #def test_parser_cli_args_01(self):
-    #    """Valid return value."""
-    #    parsed = self.parser.parse_args(['--sets', '5'])
-    #    self.assertEqual(parsed.sets, 5)
-
-    #def test_parser_cli_args_02(self):
-    #    """Valid return value."""
-    #    parsed = self.parser.parse_args(['--sets', '20'])
-    #    self.assertEqual(parsed.sets, 20)
+    def test_parser_cli_args_02(self):
+        """Valid return value."""
+        parsed = self.parser.parse_args(['--sets', '20'])
+        self.assertEqual(parsed.sets, 20)
 
 if __name__ == '__main__':
     unittest.main()
