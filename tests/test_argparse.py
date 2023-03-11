@@ -9,15 +9,15 @@ import unittest
 def parse_cli_args():
     """Command line parser for user-defined sets of numbers.
     Args:
-      --sets n
+      --sets 10
     Returns:
-        int. e.g. n
+        Integer, e.g. 10
     """
 
     parser = argparse.ArgumentParser(description="Set(s) of PowerBall numbers to generate.")
     parser.add_argument("--sets", action="store", type=int,\
                         required=False,\
-                        help="Number of sets to generate, e.g. 5")
+                        help="Number of sets to generate, e.g. 10")
 
     return parser
 
@@ -30,8 +30,9 @@ class ParseCLIArgs(unittest.TestCase):
         self.parser = parse_cli_args()
 
     def test_parser_cli_args_01(self):
+        """Valid return value."""
         parsed = self.parser.parse_args(['--sets', '5'])
-        self.assertTrue(type(self) is str)
+        self.assertTrue(parsed.sets, '5')
 
 
     #def test_parser_cli_args_01(self):
@@ -46,4 +47,3 @@ class ParseCLIArgs(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
