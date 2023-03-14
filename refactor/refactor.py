@@ -3,7 +3,6 @@
 """Pseudo-random number generator for 'Powerball' lottery.
 """
 
-from __future__ import print_function
 from builtins import input
 
 import random
@@ -18,36 +17,6 @@ def make_table():
     table = PrettyTable(['Whites #s', 'Red #'])
     table.align = 'l'
     return table
-
-
-def yes_no_input():
-    """Prompt user for Y/N input.
-    Args: User input.
-    Returns: 'y' or 'n'.
-    Raises: ValueError.
-    """
-
-    while True:
-        try:
-            user_input = str(input('Generate Powerball numbers? Y/N: ')).lower()
-            if user_input in ['y', 'n']:
-                return user_input
-        except ValueError:
-            print('Try again')
-
-
-def numerical_input():
-    """Prompt user for numerical input.
-    Args: User input.
-    Returns: Integer.
-    Raises: ValueError.
-    """
-
-    while True:
-        try:
-            return int(input('How many sets of Powerball numbers should we generate?: '))
-        except ValueError:
-            print('Try again')
 
 
 def white_numbers():
