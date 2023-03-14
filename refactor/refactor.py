@@ -3,11 +3,10 @@
 """Pseudo-random number generator for 'Powerball' lottery.
 """
 
-from builtins import input
 
+import argparse
 import random
 from prettytable import PrettyTable
-import argparse
 
 
 def make_table():
