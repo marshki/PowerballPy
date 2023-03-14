@@ -20,7 +20,7 @@ PowerballPy :8ball:
 Powerball Number Generator
 --------------------------
 
-Pseudo-random number generator for Powerball_ lottery in Python 2 & 3.
+Pseudo-random number generator for Powerball_ lottery in Python 3.
 
 .. _Powerball: https://www.powerball.com/games/home 
 
@@ -43,17 +43,15 @@ Sample Output
 
 Requirements
 ------------
-Install Python requirements per your version of Python:
+Install Python3 requirements:
 ::
-    pip install -r requirements.txt
     pip3 install -r requirements.txt 
 
 Usage
 -----
-Run directly from a shell per your version of Python: 
+Run directly from a shell in Python3:
 :: 
-    python powerballPy.py   
-    python3 powerballPy.py 
+    python3 powerballPy.py --n 5
     
 Program generates the following set:
 
