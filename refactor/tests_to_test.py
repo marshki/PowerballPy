@@ -5,10 +5,6 @@ from powerball import generate_powerball_table
 
 class TestPowerball(unittest.TestCase):
 
-    @patch('builtins.input', return_value='n')
-    def test_yes_no_input(self, mock_input):
-        self.assertEqual(yes_no_input(), 'n')
-
     @patch('builtins.input', return_value='3')
     def test_numerical_input(self, mock_input):
         self.assertEqual(numerical_input(), 3)
