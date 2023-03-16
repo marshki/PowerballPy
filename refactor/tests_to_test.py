@@ -1,4 +1,5 @@
 import unittest
+import io
 from unittest.mock import patch
 from powerball import generate_powerball_table
 
@@ -44,3 +45,5 @@ class TestPowerball(unittest.TestCase):
             generate_powerball_table(2)
             self.assertEqual(mock_stdout.getvalue(), '+-----------+-------+\n| Whites #s | Red # |\n+-----------+-------+\n| 58, 11, 14, 45, 25 | 21    |\n| 29, 50, 48, 23, 33 | 19    |\n+-----------+-------+\n')
 
+if __name__ == '__main__':
+    unittest.main()
