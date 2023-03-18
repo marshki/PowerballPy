@@ -3,10 +3,8 @@
 """Testing class for 'make_table' function.
 """
 
-
 import unittest
 from prettytable import PrettyTable
-
 
 def make_table():
     """Use 'PrettyTable' module to create table for output. Align left.
@@ -15,7 +13,6 @@ def make_table():
     table = PrettyTable(['Whites #s', 'Red #'])
     table.align = 'l'
     return table
-
 
 class TestMakeTable(unittest.TestCase):
     """Test class.
