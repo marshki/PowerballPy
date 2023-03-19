@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 
-"""Unit tests for powerbally.py
+"""Unit tests for powerballyPy.py
 """
 
+import argparse
 import random
 import unittest
 from prettytable import PrettyTable
+from unittest.mock import patch
+from powerballPy import main
 
 def white_numbers(range_min, range_max, balls):
     """Generate n pseudo-random numbers between min and max range +1.
@@ -87,6 +90,14 @@ class TestMakeTable(unittest.TestCase):
         self.assertEqual(table.field_names, ['Whites #s', 'Red #'])
         for field in table.field_names:
             self.assertEqual(table.align[field], 'l')
+
+class TestArgParsing(unittest.TestCase):
+
+    @patch('argparse.ArgumentParser.parse_args',
+           return_value=argparse.Namespace(num_sets=3))
+    def test_num_sets_arg(self, mock_args):
+        main()
+        mock_args.assert_called_once_with()
 
 if __name__ == '__main__':
     unittest.main()
