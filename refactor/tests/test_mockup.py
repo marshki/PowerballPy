@@ -6,9 +6,31 @@
 import argparse
 import random
 import unittest
-from prettytable import PrettyTable
 from unittest.mock import patch
-from powerballPy import main
+from prettytable import PrettyTable
+from powerballpy import main
+
+def make_table():
+    """Use 'PrettyTable' module to create table for output. Align left.
+    """
+
+    table = PrettyTable(['Whites #s', 'Red #'])
+    table.align = 'l'
+    return table
+
+class TestMakeTable(unittest.TestCase):
+    """Test class.
+    """
+
+    def test_make_table(self):
+        """Test: table, field names, and alignment.
+        """
+
+        table = make_table()
+        self.assertIsInstance(table, PrettyTable)
+        self.assertEqual(table.field_names, ['Whites #s', 'Red #'])
+        for field in table.field_names:
+            self.assertEqual(table.align[field], 'l')
 
 def white_numbers(range_min, range_max, balls):
     """Generate n pseudo-random numbers between min and max range +1.
@@ -69,33 +91,15 @@ class TestRedNumber(unittest.TestCase):
             self.assertGreaterEqual(red_ball, self.range_min)
             self.assertLessEqual(red_ball, self.range_max)
 
-def make_table():
-    """Use 'PrettyTable' module to create table for output. Align left.
-    """
-
-    table = PrettyTable(['Whites #s', 'Red #'])
-    table.align = 'l'
-    return table
-
-class TestMakeTable(unittest.TestCase):
+class TestArgParsing(unittest.TestCase):
     """Test class.
     """
-
-    def test_make_table(self):
-        """Test: table, field names, and alignment.
-        """
-
-        table = make_table()
-        self.assertIsInstance(table, PrettyTable)
-        self.assertEqual(table.field_names, ['Whites #s', 'Red #'])
-        for field in table.field_names:
-            self.assertEqual(table.align[field], 'l')
-
-class TestArgParsing(unittest.TestCase):
 
     @patch('argparse.ArgumentParser.parse_args',
            return_value=argparse.Namespace(num_sets=3))
     def test_num_sets_arg(self, mock_args):
+        """Test argument parsing.
+        """
         main()
         mock_args.assert_called_once_with()
 
