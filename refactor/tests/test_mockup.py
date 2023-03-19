@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#pylint: disable=R0201
 
 """Unit tests for powerballyPy.py
 """
