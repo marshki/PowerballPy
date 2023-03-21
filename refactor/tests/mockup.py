@@ -5,7 +5,7 @@
 """
 
 import unittest
-from unittest.mock import patch
+# from unittest.mock import patch
 from prettytable import PrettyTable
 from powerballpy import make_table
 from powerballpy import white_numbers
@@ -15,7 +15,7 @@ class TestMakeTable(unittest.TestCase):
     """
 
     def test_make_table(self):
-        """Test: table, field names, and alignment.
+        """Test table creation; table field names; and table alignment.
         """
 
         table = make_table()
@@ -25,19 +25,34 @@ class TestMakeTable(unittest.TestCase):
             self.assertEqual(table.align[field], 'l')
 
 class TestWhiteNumbers(unittest.TestCase):
+    """Test class.
+    """
+
     def test_output_is_list(self):
+        """Test if instance is list.
+        """
+
         result = white_numbers()
         self.assertIsInstance(result, list)
-    
+
     def test_output_has_five_elements(self):
+        """Test if set contains five elements.
+        """
+
         result = white_numbers()
         self.assertEqual(len(result), 5)
-    
+
     def test_output_has_unique_elements(self):
+        """Test if elements of set are unique.
+        """
+
         result = white_numbers()
         self.assertEqual(len(set(result)), 5)
-    
+
     def test_output_has_integers_between_1_and_69(self):
+        """Test if elements of list are between 1 and 69, inclusive.
+        """
+
         result = white_numbers()
         self.assertTrue(all(1 <= n <= 69 for n in result))
 
