@@ -25,31 +25,21 @@ class TestMakeTable(unittest.TestCase):
             self.assertEqual(table.align[field], 'l')
 
 class TestWhiteNumbers(unittest.TestCase):
-    """Test class.
-    """
-
-    def setUp(self):
-        self.range_min = 1
-        self.range_max = 69
-        self.balls = 5
-        self.white_balls = white_numbers(self.range_min, self.range_max, self.balls)
-
-    def test_count(self):
-        """Test count of balls genertated.
-        """
-        self.assertEqual(len(self.white_balls), self.balls)
-
-    def test_range(self):
-        """Test white_ball falls within min and max range.
-        """
-        for white_ball in self.white_balls:
-            self.assertGreaterEqual(white_ball, self.range_min)
-            self.assertLessEqual(white_ball, self.range_max)
-
-    def test_duplicates(self):
-        """Test for white_ball duplicates.
-        """
-        self.assertEqual(self.white_balls, set(self.white_balls))
+    def test_output_is_list(self):
+        result = white_numbers()
+        self.assertIsInstance(result, list)
+    
+    def test_output_has_five_elements(self):
+        result = white_numbers()
+        self.assertEqual(len(result), 5)
+    
+    def test_output_has_unique_elements(self):
+        result = white_numbers()
+        self.assertEqual(len(set(result)), 5)
+    
+    def test_output_has_integers_between_1_and_69(self):
+        result = white_numbers()
+        self.assertTrue(all(1 <= n <= 69 for n in result))
 
 if __name__ == '__main__':
     unittest.main()
