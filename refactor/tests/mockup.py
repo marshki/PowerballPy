@@ -10,14 +10,6 @@ from prettytable import PrettyTable
 from powerballpy import make_table
 from powerballpy import white_numbers
 
-#def make_table():
-#    """Use 'PrettyTable' module to create table for output. Align left.
-#    """
-
-#    table = PrettyTable(['Whites #s', 'Red #'])
-#    table.align = 'l'
-#    return table
-
 class TestMakeTable(unittest.TestCase):
     """Test class.
     """
