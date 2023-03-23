@@ -37,14 +37,14 @@ class TestWhiteNumbers(unittest.TestCase):
         self.assertIsInstance(result, list)
 
     def test_output_has_five_elements(self):
-        """Test if set contains five (5) elements.
+        """Test if list contains five (5) elements.
         """
 
         result = white_numbers()
         self.assertEqual(len(result), 5)
 
     def test_output_has_unique_elements(self):
-        """Test if elements of set are unique.
+        """Test if elements of list are unique.
         """
 
         result = white_numbers()
@@ -70,7 +70,7 @@ class TestRedNumber(unittest.TestCase):
         self.assertIsInstance(result, list)
 
     def test_output_has_one_elements(self):
-        """Test if set contains one (1) element.
+        """Test if list contains one (1) element.
         """
 
         result = red_number()
