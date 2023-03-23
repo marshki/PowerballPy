@@ -32,7 +32,7 @@ class TestWhiteNumbers(unittest.TestCase):
     def test_output_is_list(self):
         """Test if instance is list.
         """
-
+        
         result = white_numbers()
         self.assertIsInstance(result, list)
 
@@ -64,11 +64,21 @@ class TestRedNumber(unittest.TestCase):
 
     def test_output_is_int(self):
         result = red_number()
-        self.assertIsInstance(result, int)
-    
-    def test_output_is_between_1_and_26(self):
+        self.assertIsInstance(result, list)
+
+    def test_output_has_one_elements(self):
+
         result = red_number()
-        self.assertTrue(1 <= result <= 26)
+        self.assertEqual(len(result), 1)
+
+
+    def test_output_is_between_1_and_26(self):
+ 
+        result = red_number()
+
+        self.assertIsInstance(result, list)
+        self.assertEqual(len(result), 1)
+        self.assertTrue(all(1 <= n <= 26 for n in result))
 
 if __name__ == '__main__':
     unittest.main()
