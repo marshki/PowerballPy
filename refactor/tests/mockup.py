@@ -56,5 +56,9 @@ class TestWhiteNumbers(unittest.TestCase):
         result = white_numbers()
         self.assertTrue(all(1 <= n <= 69 for n in result))
 
+class TestWhiteNumbers(unittest.TestCase):
+    """Test class.
+    """
+
 if __name__ == '__main__':
     unittest.main()
