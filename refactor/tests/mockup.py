@@ -4,12 +4,11 @@
 """Unit tests for powerballypy.py
 """
 
+import argparse
 import unittest
-# from unittest.mock import patch
+from unittest.mock import patch
 from prettytable import PrettyTable
-from powerballpy import make_table
-from powerballpy import white_numbers
-from powerballpy import red_number
+from powerballpy import *
 
 class TestMakeTable(unittest.TestCase):
     """Test class.
@@ -86,6 +85,18 @@ class TestRedNumber(unittest.TestCase):
         self.assertIsInstance(result, list)
         self.assertEqual(len(result), 1)
         self.assertTrue(all(1 <= n <= 26 for n in result))
+
+class TestArgParsing(unittest.TestCase):
+    """Test class.
+    """
+
+    @patch('argparse.ArgumentParser.parse_args',
+           return_value=argparse.Namespace(num_sets=3))
+    def test_num_sets_arg(self, mock_args):
+        """Test argument parsing.
+        """
+        main()
+        mock_args.assert_called_once_with()
 
 if __name__ == '__main__':
     unittest.main()
