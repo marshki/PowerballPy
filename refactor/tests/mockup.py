@@ -56,9 +56,18 @@ class TestWhiteNumbers(unittest.TestCase):
         result = white_numbers()
         self.assertTrue(all(1 <= n <= 69 for n in result))
 
-class TestWhiteNumbers(unittest.TestCase):
+    
+class TestRedNumber(unittest.TestCase):
     """Test class.
-    """
+    """    
+
+    def test_output_is_int(self):
+        result = red_number()
+        self.assertIsInstance(result, int)
+    
+    def test_output_is_between_1_and_26(self):
+        result = red_number()
+        self.assertTrue(1 <= result <= 26)
 
 if __name__ == '__main__':
     unittest.main()
