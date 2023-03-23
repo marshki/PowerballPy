@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #pylint: disable=R0201
 
-"""Unit tests for powerballyPy.py
+"""Unit tests for powerballypy.py
 """
 
 import unittest
@@ -32,12 +32,12 @@ class TestWhiteNumbers(unittest.TestCase):
     def test_output_is_list(self):
         """Test if instance is list.
         """
-        
+
         result = white_numbers()
         self.assertIsInstance(result, list)
 
     def test_output_has_five_elements(self):
-        """Test if set contains five elements.
+        """Test if set contains five (5) elements.
         """
 
         result = white_numbers()
@@ -57,23 +57,30 @@ class TestWhiteNumbers(unittest.TestCase):
         result = white_numbers()
         self.assertTrue(all(1 <= n <= 69 for n in result))
 
-    
+
 class TestRedNumber(unittest.TestCase):
     """Test class.
-    """    
+    """
 
-    def test_output_is_int(self):
+    def test_output_is_list(self):
+        """Test if instance is list.
+        """
+
         result = red_number()
         self.assertIsInstance(result, list)
 
     def test_output_has_one_elements(self):
+        """Test if set contains one (1) element.
+        """
 
         result = red_number()
         self.assertEqual(len(result), 1)
 
 
     def test_output_is_between_1_and_26(self):
- 
+        """Test if elements of list are between 1 and 26, inclusive.
+        """
+
         result = red_number()
 
         self.assertIsInstance(result, list)
