@@ -9,6 +9,7 @@ import unittest
 from prettytable import PrettyTable
 from powerballpy import make_table
 from powerballpy import white_numbers
+from powerballpy import red_number
 
 class TestMakeTable(unittest.TestCase):
     """Test class.
