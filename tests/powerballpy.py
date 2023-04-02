@@ -32,9 +32,9 @@ def red_number():
     return red
 
 def generate_powerball_table(num_sets):
-    """Iterate through _i number of sets;
-    generate 'white' & 'red' numbers;
-    append to table. Add rows as needed.
+    """Iterate through --n (number) of sets.
+    Generate 'white' & 'red' numbers, then append to table.
+    Add rows as needed.
     """
 
     table = make_table()
