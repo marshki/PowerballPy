@@ -4,7 +4,7 @@ Overall, the script looks good and is well-written. Here are some suggestions fo
 
 - [ ] You could add some more error handling to the numerical_input() function to make sure that the input is a positive integer.
 
-- [ ] In the white_numbers() and red_number() functions, you don't need to convert the generated numbers to strings and then join them with commas. Instead, you could just return the list of numbers.
+- [ x ] In the white_numbers() and red_number() functions, you don't need to convert the generated numbers to strings and then join them with commas. Instead, you could just return the list of numbers.
 
 - [ x ] You could consider adding some unit tests to make sure that the functions are working correctly.
 
