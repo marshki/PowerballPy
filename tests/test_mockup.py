@@ -8,7 +8,7 @@ import argparse
 import unittest
 from unittest.mock import patch
 from prettytable import PrettyTable
-from powerballpy import *
+from powerballpy import make_table, white_numbers, red_number, main
 
 class TestMakeTable(unittest.TestCase):
     """Test class.
