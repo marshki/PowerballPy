@@ -20,16 +20,14 @@ def white_numbers():
     Strip non-integer characters, separate numbers with commas.
     """
 
-    whites = random.sample(range(1, 69 + 1), 5)
-    return whites
+    return random.sample(range(1, 69 + 1), 5)
 
 def red_number():
     """Generate one (1) 'red ball' number between 1 and 26--inclusive.
     Strip non-integer characters.
     """
 
-    red = random.sample(range(1, 26 + 1), 1)
-    return red
+    return random.sample(range(1, 26 + 1), 1)
 
 def generate_powerball_table(num_sets):
     """Iterate through --n (number) of sets.
