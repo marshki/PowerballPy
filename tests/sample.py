@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#
+
 while True:
     number = input("Enter a number: ")
     try:
