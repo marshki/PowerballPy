@@ -10,7 +10,7 @@ while True:
     try:
         value = int(number)
         if value < 1:
-            print("Try again.")
+            print("Integer must be greater than or equal to one (1).")
             continue
         break
     except ValueError:
