@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-#
+
+"""Placeholder.
+"""
 
 while True:
     number = input("Enter a number: ")
