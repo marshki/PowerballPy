@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Try/except block for user input. 
+"""Try/except block for user input.
 Needs integration with argparse.
 Probably enough to exit for invalid input.
 """
