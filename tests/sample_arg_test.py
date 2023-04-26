@@ -15,3 +15,9 @@ class TestArgParse(unittest.TestCase):
         parser.add_argument("-n", "--num_sets", type=int, default=1)
         args = parser.parse_args(['-n', '5'])
         self.assertEqual(args.num_sets, 5)
+
+    def test_invalid_num_sets(self):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-n", "--num_sets", type=int, default=1)
+        with self.assertRaises(SystemExit):
+            parser.parse_args(['-n', 'foo'])
