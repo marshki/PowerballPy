@@ -21,3 +21,11 @@ class TestArgParse(unittest.TestCase):
         parser.add_argument("-n", "--num_sets", type=int, default=1)
         with self.assertRaises(SystemExit):
             parser.parse_args(['-n', 'foo'])
+
+    def test_other_args(self):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-f", "--filename", type=str, default="output.txt")
+        args = parser.parse_args(['-f', 'results.txt'])
+        self.assertEqual(args.filename, 'results.txt')
+
+
