@@ -14,7 +14,6 @@ except argparse.ArgumentTypeError as e:
     parser.error(str(e))
 
 """
-
 import unittest
 from unittest.mock import patch
 from io import StringIO
