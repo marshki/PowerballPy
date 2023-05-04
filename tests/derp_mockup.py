@@ -98,7 +98,7 @@ class TestArgParsing(unittest.TestCase):
         main()
         mock_args.assert_called_once_with()
 
-    @patch('argparse.ArgumentParser.parse_args', 
+    @patch('argparse.ArgumentParser.parse_args',
             return_value=argparse.Namespace(num_sets=-1))
     def test_negative_integer(self, mock_args):
         """Test argument parsing with a negative integer.
