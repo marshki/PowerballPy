@@ -98,5 +98,12 @@ class TestArgParsing(unittest.TestCase):
         main()
         mock_args.assert_called_once_with()
 
+    def test_negative_integer(self):
+        """Test that the function raises an error if a negative integer is entered.
+        """
+        with self.assertRaises(argparse.ArgumentTypeError):
+            with patch('sys.argv', ['prog', '-n', '-1']):
+                main()
+
 if __name__ == '__main__':
     unittest.main()
