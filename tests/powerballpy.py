@@ -44,7 +44,9 @@ def generate_powerball_table(num_sets):
     return table
 
 def main():
-    """Main function.
+    """Generate powerball table.
+    Parse user input for number of sets to generate. Default is 1.
+    Raise error if user input is less than 1.
     """
 
     parser = argparse.ArgumentParser(description="Powerball Number Generator")
