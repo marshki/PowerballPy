@@ -100,7 +100,7 @@ class TestArgParsing(unittest.TestCase):
 
     @patch('argparse.ArgumentParser.parse_args',
             return_value=argparse.Namespace(num_sets=-1))
-    def test_negative_integer(self, mock_args):
+    def test_negative_integer(self):
         """Test argument parsing with a negative integer.
         """
         with self.assertRaises(SystemExit) as cm:
