@@ -52,6 +52,12 @@ def main():
 
     args = parser.parse_args()
 
+    try:
+        if args.num_sets < 1:
+            raise argparse.ArgumentTypeError("Number of sets must be a positive integer.")
+    except argparse.ArgumentTypeError as e:
+        parser.error(str(e))
+
     generate = generate_powerball_table(args.num_sets)
     print(generate)
 
