@@ -68,7 +68,7 @@ class TestRedNumber(unittest.TestCase):
         result = red_number()
         self.assertIsInstance(result, list)
 
-    def test_output_has_one_elements(self):
+    def test_output_has_one_element(self):
         """Test if list contains one (1) element.
         """
 
@@ -93,7 +93,7 @@ class TestArgParsing(unittest.TestCase):
     @patch('argparse.ArgumentParser.parse_args',
            return_value=argparse.Namespace(num_sets=3))
     def test_num_sets_arg(self, mock_args):
-        """Test argument parsing.
+        """Test that argument parser accepts a positive integer.
         """
         main()
         mock_args.assert_called_once_with()
