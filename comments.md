@@ -2,7 +2,7 @@ Overall, the script looks good and is well-written. Here are some suggestions fo
 
 - [ ] You may want to add some docstrings to the functions to provide more information about what they do, what their input and output parameters are, and how to use them.
 
-- [ ] You could add some more error handling to main function (argparse) to make sure that the input is a positive integer.
+- [ x ] You could add some more error handling to main function (argparse) to make sure that the input is a positive integer.
 
 - [ x ] In the white_numbers() and red_number() functions, you don't need to convert the generated numbers to strings and then join them with commas. Instead, you could just return the list of numbers.
 
