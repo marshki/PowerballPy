@@ -37,6 +37,8 @@ Run directly from a shell in Python3:
 :: 
     python3 powerballPy.py --n 5
 
+or:
+
     python3 powerballPy.py --num_sets 5
     
 Program generates the following set:
@@ -52,7 +54,6 @@ User designates the number of sets they'd like to create. Default is one (1) set
 
 Sample Output
 -------------
-
 +--------------------+-------+
 | White #s           | Red # | 
 +====================+=======+
