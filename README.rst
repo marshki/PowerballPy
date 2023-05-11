@@ -2,8 +2,8 @@
 PowerballPy :8ball:
 ===========
 
-.. image:: https://travis-ci.org/marshki/PowerballPy.svg?branch=master
-    :target: https://travis-ci.org/marshki/PowerballPy
+.. image:: https://app.travis-ci.com/marshki/PowerballPy.svg?branch=master
+    :target: https://app.travis-ci.com/marshki/PowerballPy
 
 .. image:: https://api.codacy.com/project/badge/Grade/7f03d830dacb4b5cbf229739510fc1a2    
    :target: https://www.codacy.com/manual/marshki/PowerballPy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/PowerballPy&amp;utm_campaign=Badge_Grade
