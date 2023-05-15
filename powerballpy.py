@@ -16,7 +16,7 @@ def make_table():
     return table
 
 def white_numbers():
-    """Generate five (5) 'white ball' numbers btwn. 1 and 69--inclusive--no duplicates.
+    """Generate five (5) 'white ball' numbers btwn. 1 and 69 w/out duplicates.
     Strip non-integer characters, separate numbers with commas.
     """
 
@@ -24,7 +24,7 @@ def white_numbers():
     return whites
 
 def red_number():
-    """Generate one (1) 'red ball' number between 1 and 26--inclusive.
+    """Generate one (1) 'red ball' number between 1 and 26.
     Strip non-integer characters.
     """
 
