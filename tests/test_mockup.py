@@ -102,9 +102,9 @@ class TestArgParsing(unittest.TestCase):
     def test_negative_integer(self, mock_args):
         """Test argument parsing with a negative integer.
         """
-        with self.assertRaises(SystemExit) as cm:
+        with self.assertRaises(SystemExit) as context_manager:
             main()
-        self.assertEqual(cm.exception.code, 2)
+        self.assertEqual(context_manager.exception.code, 2)
 
 if __name__ == '__main__':
     unittest.main()
