@@ -16,21 +16,21 @@ def make_table():
     return table
 
 def white_numbers():
-    """Generate five (5) 'white ball' numbers btwn. 1 and 69--inclusive--no duplicates.
+    """Generate five (5) 'white ball' numbers btwn. 1 and 69 w/out duplicates.
     Strip non-integer characters, separate numbers with commas.
     """
 
     return random.sample(range(1, 69 + 1), 5)
 
 def red_number():
-    """Generate one (1) 'red ball' number between 1 and 26--inclusive.
+    """Generate one (1) 'red ball' number between 1 and 26.
     Strip non-integer characters.
     """
 
     return random.sample(range(1, 26 + 1), 1)
 
 def generate_powerball_table(num_sets):
-    """Iterate through --n (number) of sets.
+    """Iterate through n (number) of sets.
     Generate 'white' & 'red' numbers, then append to table.
     Add rows as needed.
     """
@@ -44,7 +44,7 @@ def generate_powerball_table(num_sets):
     return table
 
 def main():
-    """Generate powerball table.
+    """Generate PowerballPy table.
     Parse user input for number of sets to generate. Default is 1.
     Raise error if user input is less than 1.
     """
@@ -64,5 +64,5 @@ def main():
     print(generate)
 
 if __name__ == '__main__':
-    print("Welcome to the Powerball Number Generator!")
+    print("Welcome to the PowerballPy Number Generator!")
     main()
