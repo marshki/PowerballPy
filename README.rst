@@ -43,8 +43,8 @@ or:
     
 Program generates the following set:
 
-* five (5) pseudo-random numbers between 1 and 69, inclusive (with no duplicates), and
-* one (1) pseudo-random number between 1 and 26, inclusive.
+* five (5) distinct pseudo-random numbers between 1 and 69, and
+* one (1) pseudo-random number between 1 and 26.
 
 to a PrettyTable_ .
 
