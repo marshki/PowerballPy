@@ -46,10 +46,11 @@ def generate_powerball_table(num_sets):
     return table
 
 def main():
-    """Main function.
+    """Argument parser.
+    Accepts one (1) argument.
     """
 
-    parser = argparse.ArgumentParser(description="Powerball Number Generator")
+    parser = argparse.ArgumentParser(description="PowerballPy Number Generator")
     parser.add_argument("-n", "--num_sets", type=int, default=1, help="Number of sets to generate")
 
     args = parser.parse_args()
@@ -58,5 +59,5 @@ def main():
     print(generate)
 
 if __name__ == '__main__':
-    print("Welcome to the Powerball Number Generator!")
+    print("Welcome to the PowerballPy Number Generator!")
     main()
