@@ -20,16 +20,14 @@ def white_numbers():
     Strip non-integer characters, separate numbers with commas.
     """
 
-    whites = random.sample(range(1, 69 + 1), 5)
-    return whites
+    return random.sample(range(1, 69 + 1), 5)
 
 def red_number():
     """Generate one (1) 'red ball' number between 1 and 26.
     Strip non-integer characters.
     """
 
-    red = random.sample(range(1, 26 + 1), 1)
-    return red
+    return random.sample(range(1, 26 + 1), 1)
 
 def generate_powerball_table(num_sets):
     """Iterate through n (number) of sets.
@@ -46,14 +44,21 @@ def generate_powerball_table(num_sets):
     return table
 
 def main():
-    """Argument parser.
-    Accepts one (1) argument.
+    """Generate PowerballPy table.
+    Parse user input for number of sets to generate. Default is 1.
+    Raise error if user input is less than 1.
     """
 
     parser = argparse.ArgumentParser(description="PowerballPy Number Generator")
     parser.add_argument("-n", "--num_sets", type=int, default=1, help="Number of sets to generate")
 
     args = parser.parse_args()
+
+    try:
+        if args.num_sets < 1:
+            raise argparse.ArgumentTypeError("Number of sets must be a positive integer.")
+        except argparse.ArgumentTypeError as error:
+            parser.error(str(error))
 
     generate = generate_powerball_table(args.num_sets)
     print(generate)
