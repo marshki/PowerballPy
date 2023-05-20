@@ -8,6 +8,6 @@ Overall, the script looks good and is well-written. Here are some suggestions fo
 
 - [ x ] You could consider adding some unit tests to make sure that the functions are working correctly.
 
-- [ ] You may want to add some comments to your code to make it more clear and easier to understand.
+- [ x ] You may want to add some comments to your code to make it more clear and easier to understand.
 
 Overall, your script is well-written and functional. With these suggestions, you can make it even better.
