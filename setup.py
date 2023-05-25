@@ -1,3 +1,10 @@
+"""
+Project setup script for PowerballPy.
+
+This script defines the metadata and dependencies required 
+for packaging and distribution of the PowerballPy package.
+"""
+
 from setuptools import setup
 
 setup(
@@ -5,7 +12,7 @@ setup(
         version='0.1.2',
         author='M. Krinitz',
         author_email='<marshall [at] morethantomorrow [dot] org>',
-        description='Pseudo-random number generator for Powerball lottery in Python 3.',
+        description='Pseudo-random number generator for Powerball lottery in Python.',
         url='https://github.com/marshki/PowerballPy',
         packages='powerballpy',
         install_requires=[
