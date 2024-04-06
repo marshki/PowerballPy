@@ -37,17 +37,23 @@ Pseudo-random number generator for Powerball_ lottery in Python 3.
 Requirements
 ------------
 Install Python3 requirements:
-::
-    pip3 install -r requirements.txt 
+
+.. code-block:: Python3
+
+    pip3 install -r requirements.txt
 
 Usage
 -----
 Run directly from a shell in Python3:
-:: 
+
+.. code-block:: Python3
+
     python3 powerballPy.py --n 5
 
 or:
-::
+
+.. code-block:: Python3 
+
     python3 powerballPy.py --num_sets 5
     
 Program generates the following set:
