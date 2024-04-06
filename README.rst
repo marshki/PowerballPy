@@ -1,6 +1,6 @@
-===========
 PowerballPy :8ball:
-===========
+========================================================================================
+|travis| |codacy| |maintained| |python| |mit| |open source|
 
 .. image:: https://app.travis-ci.com/marshki/PowerballPy.svg?branch=master
     :target: https://app.travis-ci.com/marshki/PowerballPy
