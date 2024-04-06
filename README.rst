@@ -2,20 +2,29 @@ PowerballPy :8ball:
 ========================================================================================
 |travis| |codacy| |maintained| |python| |mit| |open source|
 
-.. image:: https://app.travis-ci.com/marshki/PowerballPy.svg?branch=master
+.. |travis| image:: https://app.travis-ci.com/marshki/PowerballPy.svg?branch=master
     :target: https://app.travis-ci.com/marshki/PowerballPy
+    :alt: Travis
 
-.. image:: https://api.codacy.com/project/badge/Grade/7f03d830dacb4b5cbf229739510fc1a2    
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/7f03d830dacb4b5cbf229739510fc1a2
    :target: https://www.codacy.com/manual/marshki/PowerballPy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/PowerballPy&amp;utm_campaign=Badge_Grade
+   :alt: Codacy
 
-.. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+.. |maintained| image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg
+   :target: https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity
+   :alt: Maintained
+
+.. |python| image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
    :target: https://www.python.org/
+   :alt: Python
 
-.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+.. |mit| image:: https://img.shields.io/badge/License-MIT-blue.svg
    :target: https://lbesson.mit-license.org/
+   :alt: MIT
 
-.. image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
+.. |open source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
    :target: https://github.com/ellerbrock/open-source-badges/
+   :alt: Open Source
 
 Powerball Number Generator
 --------------------------
