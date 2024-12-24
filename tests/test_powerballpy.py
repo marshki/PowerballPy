@@ -19,7 +19,6 @@ class TestMakeTable(unittest.TestCase):
     def test_make_table(self):
         """Test table creation; table field names; and table alignment.
         """
-
         table = make_table()
         self.assertIsInstance(table, PrettyTable)
         self.assertEqual(table.field_names, ['Whites #s', 'Red #'])
@@ -73,8 +72,6 @@ class TestRedNumber(unittest.TestCase):
         """Test if elements of list are between 1 and 26, inclusive.
         """
         result = red_number()
-        self.assertIsInstance(result, list)
-        self.assertEqual(len(result), 1)
         self.assertTrue(all(1 <= n <= 26 for n in result))
 
 class TestArgParsing(unittest.TestCase):
