@@ -20,7 +20,7 @@ def white_numbers():
     return random.sample(range(1, 69 + 1), 5)
 
 def red_number():
-    """Generate one (1) 'red ball' number between 1 and 26.
+    """Generate one (1) 'red ball' number btwn. 1 and 26.
     """
     return random.sample(range(1, 26 + 1), 1)
 
@@ -47,8 +47,8 @@ def main():
     except argparse.ArgumentTypeError as error:
         parser.error(str(error))
 
-    generate = generate_powerball_table(args.num_sets)
-    print(generate)
+    table = generate_powerball_table(args.num_sets)
+    print(table)
 
 if __name__ == '__main__':
     print("Welcome to the PowerballPy Number Generator!")
