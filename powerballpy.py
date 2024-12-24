@@ -10,7 +10,6 @@ from prettytable import PrettyTable
 def make_table():
     """Use 'PrettyTable' module to create table for output. Align left.
     """
-
     table = PrettyTable(['Whites #s', 'Red #'])
     table.align = 'l'
     return table
@@ -19,14 +18,12 @@ def white_numbers():
     """Generate five (5) 'white ball' numbers btwn. 1 and 69 w/out duplicates.
     Strip non-integer characters, separate numbers with commas.
     """
-
     return random.sample(range(1, 69 + 1), 5)
 
 def red_number():
     """Generate one (1) 'red ball' number between 1 and 26.
     Strip non-integer characters.
     """
-
     return random.sample(range(1, 26 + 1), 1)
 
 def generate_powerball_table(num_sets):
@@ -34,9 +31,7 @@ def generate_powerball_table(num_sets):
     Generate 'white' & 'red' numbers, then append to table.
     Add rows as needed.
     """
-
     table = make_table()
-
     for _i in range(num_sets):
         white = white_numbers()
         red = red_number()
@@ -48,10 +43,8 @@ def main():
     Parse user input for number of sets to generate. Default is 1.
     Raise error if user input is less than 1.
     """
-
     parser = argparse.ArgumentParser(description="PowerballPy Number Generator")
     parser.add_argument("-n", "--num_sets", type=int, default=1, help="Number of sets to generate")
-
     args = parser.parse_args()
 
     try:
